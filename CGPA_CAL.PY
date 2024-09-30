@@ -45,7 +45,7 @@ def First_Semester():
     if credits is None:
         return
     sgpa = calculate_sgpa(credits, 19.5)
-    print("\n\n\tYour SGPA Calculated: {:.1f}".format(sgpa))
+    print("\n\n\tYour SGPA Calculated: {:.3f}".format(sgpa))
 
 def Second_Semester():
     subjects = [
@@ -63,7 +63,7 @@ def Second_Semester():
     if credits is None:
         return
     sgpa = calculate_sgpa(credits, 20.5)
-    print("\n\tYour SGPA Calculated: {:.1f}".format(sgpa))
+    print("\n\tYour SGPA Calculated: {:.3f}".format(sgpa))
 
 def Third_Semester():
     subjects = [
@@ -80,7 +80,7 @@ def Third_Semester():
     if credits is None:
         return
     sgpa = calculate_sgpa(credits, 22)
-    print("\n\tYour SGPA Calculated: {:.1f}".format(sgpa))
+    print("\n\tYour SGPA Calculated: {:.3f}".format(sgpa))
 
 def Fourth_Semester():
     subjects = [
@@ -99,7 +99,7 @@ def Fourth_Semester():
     if credits is None:
         return
     sgpa = calculate_sgpa(credits, 25)
-    print("\n\tYour SGPA Calculated: {:.1f}".format(sgpa))
+    print("\n\tYour SGPA Calculated: {:.3f}".format(sgpa))
 
 def Fifth_Semester():
     subjects = [
@@ -116,7 +116,7 @@ def Fifth_Semester():
     if credits is None:
         return
     sgpa = calculate_sgpa(credits, 21)
-    print("\n\tYour SGPA Calculated: {:.1f}".format(sgpa))
+    print("\n\tYour SGPA Calculated: {:.3f}".format(sgpa))
 
 def Sixth_Semester():
     subjects = [
@@ -134,7 +134,7 @@ def Sixth_Semester():
     if credits is None:
         return
     sgpa = calculate_sgpa(credits, 23)
-    print("\n\tYour SGPA Calculated: {:.1f}".format(sgpa))
+    print("\n\tYour SGPA Calculated: {:.3f}".format(sgpa))
 
 # The functions for 7th and 8th semesters remain as they are.
 def Seventh_Semester():
@@ -150,14 +150,14 @@ def Seventh_Semester():
     if credits is None:
         return
     sgpa = calculate_sgpa(credits, 13)
-    print("\n\tYour SGPA Calculated: {:.1f}".format(sgpa))
+    print("\n\tYour SGPA Calculated: {:.3f}".format(sgpa))
 
 def Eighth_Semester():
     print("\n\t   Semester selected: 8th\n\n\tEnter marks of each subject (out of 100)")
     try:
         PI2 = int(input("\nProject-II/Internship\t\t: "))
         sgpa = grade(PI2) * 10 / 10
-        print("\n\tYour SGPA Calculated: {:.1f}".format(sgpa))
+        print("\n\tYour SGPA Calculated: {:.3f}".format(sgpa))
     except ValueError:
         print("Invalid input. Please enter a numeric value.")
 
